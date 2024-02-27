@@ -7,6 +7,6 @@ and [data.table](https://rdatatable.gitlab.io/data.table/) based on
 ```
 docker run -it --rm \
   -p 8787:8787 \
-  -v $(shell pwd)/files:/home/rstudio/files:Z \
+  -v $(shell pwd)/files:/root/files:Z \
   thomasfedb/datascience-base:latest
 ```
