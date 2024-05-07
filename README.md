@@ -10,3 +10,18 @@ docker run -it --rm \
   -v $(shell pwd)/files:/root/files:Z \
   thomasfedb/datascience-base:latest
 ```
+
+## CUDA
+
+
+```
+sudo nvidia-ctk cdi generate --output=/etc/cdi/nvidia.yaml
+```
+
+
+```
+docker run -it --rm \
+  -p 8787:8787 \
+  -v $(shell pwd)/files:/root/files:Z \
+  thomasfedb/datascience-base:latest-ml
+```

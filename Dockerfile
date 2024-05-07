@@ -1,4 +1,4 @@
-FROM rocker/verse:4.3.2
+FROM rocker/ml-verse:4.3.2
 
 # Reduce verbosity of rootless notice
 RUN sed -i '23,28d' /etc/cont-init.d/02_userconf
