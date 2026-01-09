@@ -1,4 +1,4 @@
-FROM rocker/verse:4.3.2
+FROM rocker/verse:4.5.2
 
 # Reduce verbosity of rootless notice
 RUN sed -i '23,28d' /etc/cont-init.d/02_userconf
@@ -11,4 +11,4 @@ RUN R --no-restore -e  'devtools::install_github("hrbrmstr/pluralize", ref = "0e
 COPY Rprofile /root/.Rprofile
 COPY rstudio-prefs.json /root/.config/rstudio/
 
-ENV PASSWORD password
+ENV PASSWORD=password
